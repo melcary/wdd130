@@ -1,4 +1,4 @@
-:root {}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
 nav {
     background-color: darkblue;
@@ -13,6 +13,7 @@ nav a {
 
 h1 {
     color: steelblue;
+    font-family: 'Rock Salt', 'Bradley Hand', cursive;
 }
 
 p {
@@ -44,6 +45,10 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+body {
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 footer {
