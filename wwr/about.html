@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is a website of a White Water Rafting company that has all the information to enjoy its benefits.">
+    <meta name="author" content="Mel Cary">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
@@ -13,12 +17,14 @@
 
 <body>
     <header>
-        <img src="images/wwr-logo.jpg" alt="Rafting Company Logo">
+        <img src="images/wwr-logo.jpg" alt="Rafting Company Logo" class="logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -31,18 +37,46 @@
                     ducimus et qui harum fugiat quam quis</p>
             </article>
         </div>
-        <section>
+        <section class="history">
             <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At in quasi doloribus saepe a debitis nostrum
-                eos aspernatur incidunt asperiores nihil nulla maiores maxime.</p>
+            <div class="history-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At in quasi doloribus saepe a debitis
+                    nostrum
+                    eos aspernatur incidunt asperiores nihil nulla maiores maxime Lorem, ipsum dolor sit amet
+                    consecteturadipisicing elit.</p>
+                <img src="images/historyimg.jpg" alt="History image">
+                <p>Beatae alias, illo ipsum consectetur enim sequi facilis voluptate natus nemo? Porro quidem sint quas
+                    sequi, aliquam eum doloremque accusamus culpa ipsum!.</p>
+            </div>
         </section>
         <section>
             <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting1.jpg" alt="Whitewater Rafting Experience">
-            <img src="images/rafting2.jpg" alt="Whitewater Rafting Experience">
-            <img src="images/rafting3.jpg" alt="Whitewater Rafting Experience">
-            <img src="images/rafting4.jpg" alt="Whitewater Rafting Experience">
-            <img src="images/rafting5.jpg" alt="Whitewater Rafting Experience">
+            <div class="figures">
+                <figure>
+                    <img src="images/rafting1.jpg" alt="Rafting on a rapid river">
+                    <figcaption>Thrilling rapid descent</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting2.jpg" alt="Team rafting adventure">
+                    <figcaption>Team navigating the waves</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting3.jpg" alt="River landscape with rafters">
+                    <figcaption>Beautiful scenery and adrenaline</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting4.jpg" alt="People paddling in whitewater">
+                    <figcaption>Working together in whitewater</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting5.jpg" alt="Close-up of rafting action">
+                    <figcaption>Close-up rafting action shot</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
