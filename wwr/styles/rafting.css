@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #133a50;
+    --primary-color: #042336;
     /* Prussian blue */
-    --secondary-color: #658eb0;
+    --secondary-color: #355e7f;
     /* Air force blue */
     --accent1-color: #71563d;
     /* Coffee */
@@ -39,6 +39,7 @@ header {
 
 a {
     text-decoration: none;
+    color: var(--accent2-color);
 }
 
 * {
