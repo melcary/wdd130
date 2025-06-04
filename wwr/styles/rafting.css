@@ -17,7 +17,7 @@ header {
     display: grid;
     grid-template-columns: 120px 1fr;
     align-items: center;
-    max-width: 1000 px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -191,4 +191,78 @@ footer {
 .socialmedia a img {
     width: 24px;
     height: 24px;
+}
+.contact-info-map {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    margin: 1.5rem 0;
+}
+
+.contact-details {
+    flex: 1;
+    min-width: 250px;
+}
+.contact-details p,
+.contact-details a {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.employee-profiles{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.employee-profiles img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+} 
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.contact-form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.submit-button {
+    background-color: var( --secondary-color);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.submit-button:hover {
+    background-color: var(--primary-color);
 }
