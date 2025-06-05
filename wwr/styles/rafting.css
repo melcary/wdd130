@@ -59,6 +59,10 @@ footer {
     width: 840px;
     margin: 0 auto;
 }
+main {
+    margin-top: 100px; 
+    padding: 1rem;
+}
 
 h1,
 h2 {
@@ -85,10 +89,9 @@ article {
     display: block;
     width: 100%;
     height: auto;
-
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -99,6 +102,14 @@ h1 {
     color: #fff;
 }
 
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0 20px;
+    color: var(--primary-color);
+    background: none;
+    position: static;
+}
 article {
     position: absolute;
     top: 340px;
@@ -187,42 +198,14 @@ footer {
     gap: 15px;
 }
 
-
 .socialmedia a img {
     width: 24px;
     height: 24px;
 }
-.contact-info-map {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-    margin: 1.5rem 0;
+.contact-page main {
+    margin-top: 10px; 
 }
 
-.contact-details {
-    flex: 1;
-    min-width: 250px;
-}
-.contact-details p,
-.contact-details a {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-}
-
-.employee-profiles{
-    display: flex;
-    gap: 2rem;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-    text-align: center;
-}
-
-.employee-profiles img {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
 .contact-form {
     background-color: #ffffff;
     padding: 2rem;
@@ -231,16 +214,66 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.contact-page .contact-form2 {
+    max-width: 400px;   
+    margin: 0;          
+    padding-left: 0;    
+    text-align: left;
+}
+.contact-page .contact-form h2 {
+    text-align: center;   
+    margin-left: 0;
+    font-size: 1.6rem;  
+    margin-bottom: 1rem;
+}
+.contact-page .map {
+    width: 600px;   
+    align-items: center;
+    margin: 2rem auto
+}
+.employee-profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+} 
+.contact-form label {
+    text-align: center;
+    margin: 2rem auto;
+}
+.employee-profiles h2 {
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+.employee-profiles figure {
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: center;
+}
+.employee-profiles-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+ 
+.contact-form {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: left; 
+}
 
 .contact-form form {
     display: flex;
     flex-direction: column;
+    
     gap: 0.5rem;
-} 
-.contact-form label {
-    font-weight: 500;
-    margin-bottom: 0.3rem;
-    display: block;
+}
+.contact-form label,
+.contact-form p {
+    text-align: left;
+    margin: 0;
 }
 
 .contact-form input[type="text"],
@@ -249,10 +282,14 @@ footer {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #aaa;
-    border-radius: 5px;
+    border-radius: 5px;  
 }
-.contact-form input[type="radio"] {
+
+
+.contact-form input[type="radio"]
+.contact-form input[type="checkbox"] {
     margin-right: 0.5rem;
+    
 }
 
 .submit-button {
