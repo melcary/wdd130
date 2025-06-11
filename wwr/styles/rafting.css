@@ -18,9 +18,10 @@ header {
     grid-template-columns: 120px 1fr;
     align-items: center;
     max-width: 100%;
-    width: 100%;
+    width: 840px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
 
 .logo {
@@ -57,12 +58,12 @@ body {
 header,
 main,
 footer {
-    width: 100%;
+    width: 840px;
     margin: 0 auto;
 }
 main {
     margin-top: 0; 
-    padding: 1rem;
+    padding: 0;
 }
 
 h1,
@@ -87,6 +88,11 @@ article {
     width: 100%;
     margin: 0 auto;
     max-width: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+    
 }
 
 .hero img {
@@ -172,6 +178,7 @@ main h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     display: flex;
     justify-content: space-around;
+    justify-content: center;
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -307,4 +314,37 @@ footer {
 }
 .submit-button:hover {
     background-color: var(--primary-color);
+}
+
+body.home-page header,
+body.home-page main,
+body.home-page footer {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.cta {
+  text-align: center;
+  padding: 2rem;
+}
+.cta .button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.offerings .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 840px;
+  margin: 0 auto;
+}
+.offerings img {
+  width: 100%;
+  height: auto;
 }
