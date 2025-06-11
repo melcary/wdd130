@@ -18,6 +18,7 @@ header {
     grid-template-columns: 120px 1fr;
     align-items: center;
     max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -56,11 +57,11 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 main {
-    margin-top: 100px; 
+    margin-top: 0; 
     padding: 1rem;
 }
 
@@ -83,6 +84,9 @@ article {
 
 .hero {
     position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 840px;
 }
 
 .hero img {
@@ -126,6 +130,7 @@ article {
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 10px;
 
 }
 
