@@ -364,12 +364,22 @@ body.home-page .hero h1 {
   color: white;
   font-size: 4rem;
 }
+.call-to-action {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
 .call-to-action .button {
     background-color: var(--primary-color);
     color: white;
-    padding: 10px 20px;
+    padding: 20px 40px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.call-to-action .button:hover {
+    background-color: var(--accent1-color);
 }
 .container {
     max-width: 850px;
@@ -378,10 +388,17 @@ body.home-page .hero h1 {
 }
 .trip-description {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
     margin-top: 20px;
     padding: 0;
+}
+.trip-description p{
+    color:white;
+    text-align: justify;
+}
+.trip-description h2{
+    color: white;
 }
 .trip {
     border: 1px solid #ccc;
@@ -398,6 +415,7 @@ body.home-page .hero h1 {
     object-fit: cover;
     box-sizing: border-box;
 }
+
 .trip-table {
     margin-top: 30px;
     padding: 0 10px;
